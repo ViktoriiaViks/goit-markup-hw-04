@@ -8,8 +8,8 @@
   --team-back-color: #f5f4fa;
   --sub-text-color: #757575;
   --border-color: #eee;
-  --overlay: rgba(47, 48, 58, 0.4);
   --default-icon-color: #AFB1B8;
+  --icon-back-color: #434352;
 }
 
 h1,
@@ -214,10 +214,12 @@ img {
 }
 
 .business-block {
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), #2F303A), url("../images/section-background.png");
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/section-background.png");
   background-repeat: no-repeat;
   background-position: center;
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .business-content {
   display: flex;
@@ -354,8 +356,10 @@ img {
 }
 
 .contacts-block-item_transparent {
-  background-color: var(--main-back-color);
-  opacity: 0.1;
+  background-color: var(--icon-back-color);
+}
+.contacts-block-item_transparent svg{
+  fill: var(--main-back-color);
 }
 
 .contacts-block-icon {
