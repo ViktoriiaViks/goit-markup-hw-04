@@ -14,6 +14,8 @@
   --footer-text-color: #e7e9fc;
   --icon-color: #8e8f99;
   --paragraph-color: #434455;
+  --focus-color: #31d0aa;
+  --links-color: #404bbf;
 }
 
 h1,
@@ -82,6 +84,9 @@ img {
   cursor: pointer;
   line-height: 1.88;
 }
+.button:hover {
+  background-color: var(--links-color);
+}
 
 .filter-button {
   color: var(--button-color);
@@ -149,6 +154,10 @@ img {
   margin-bottom: 50px;
   color: var(--section-color);
 }
+.permanent-clients-card {
+  width: 168px;
+  height: 88px;
+}
 
 .card-block {
   display: flex;
@@ -166,22 +175,24 @@ img {
 }
 
 .card_small {
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   background-color: var(--main-back-color);
   border: 1px solid var(--icon-color);
 }
 
 .card_small:hover,
 .card_small:focus {
-  border: 1px solid var(--icon-color);
+  border: 1px solid var(--links-color);
   cursor: pointer;
 }
-
 .card-icon {
   max-width: 70px;
   max-height: 70px;
   fill: var(--icon-color);
+}
+.card-icon:hover {
+  fill: var(--links-color);
 }
 
 .card-icon_small {
@@ -349,12 +360,6 @@ img {
   width: 40px;
   height: 40px;
 }
-
-.contacts-block-item:hover {
-  cursor: pointer;
-  opacity: 1;
-  transform: scale(1.1);
-}
 .contacts-block-link {
   display: flex;
   justify-content: center;
@@ -364,6 +369,9 @@ img {
   border-radius: 50%;
   background-color: var(--button-color);
 }
+.contacts-block-link:hover {
+  background-color: var(--links-color);
+}
 
 .contacts-block-link_transparent {
   background-color: var(--icon-back-color);
@@ -372,7 +380,10 @@ img {
 .contacts-block-link_transparent svg {
   fill: var(--main-back-color);
 }
-
+.contacts-block-link_transparent:hover,
+.contacts-block-link_transparent:focus {
+  background-color: var(--focus-color);
+}
 .contacts-block-icon {
   max-width: 16px;
   max-height: 16px;
